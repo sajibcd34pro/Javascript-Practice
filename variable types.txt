@@ -1,0 +1,26 @@
+different variable types and use toFIxed with parseFloat
+
+typeof keyword .....
+toFixed , parseFloat ....
+parseFloat , toFixed(), parseFloat();
+undefined ;
+example :
+var isRomantic; //this variable is undefined . 
+this variable type is undefined ...
+
+data types in js
+=> primitive data type 
+	*Number
+	*String
+	*Boolean
+	*Undefined
+	*Null
+
+
+=> Non-primitive Data type
+	*Object
+	*Array
+	*Function
+
+const today = new Date();
+Date() method is a object 

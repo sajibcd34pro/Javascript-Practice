@@ -1,0 +1,24 @@
+comparison Operators 
+Operators Description
+
+== (double equal) Is equal to
+===(triple equal) is identical (is equal to and is of the same type)
+
+!= is not equal to 
+!== (! = =) is not identical 
+> greater than 
+>=( > =) greater than or equal to 
+< less than
+<= less than or equal to 
+
+Assignment Operators
+Operators Description
+
+= Assign
++= Add and assign. For example, x+=y is same as x = x +y;
+
+-= Subtract and assign. For example, x-= y is the same as x= x-y;
+
+*= Multiply and assign. For example, x*=y is the same as x = x*y;
+
+/= Divide and assign. For example, x/=y is the same as x= x/y;

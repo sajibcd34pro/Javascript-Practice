@@ -1,0 +1,9 @@
+=> Declare array,array length ,and array index
+
+array index start from 0
+
+var javaScriptFrameWorks = ['angular', 'react', 'vue', 'express', 'next', node];
+
+array length count from 1;
+//array.length
+console.log(javaScriptFrameWorks.length);
