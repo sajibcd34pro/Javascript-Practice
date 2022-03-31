@@ -132,8 +132,8 @@
 //         var lgth = arrLength;
 //         longest = arr[i]
 //     }
-    
-    
+
+
 // }
 // console.log(longest);
 
@@ -154,21 +154,42 @@
 
 // return will be execute only one time ; so do not use return statement in loop .
 
-function onlyPostive(arr) {
-    let keyOfArray = [];
-    for (const key of arr) {
-        if (key <= -1) {
-            continue;
-        }
-   
-        keyOfArray.push(key);
+// function onlyPostive(arr) {
+//     let keyOfArray = [];
+//     for (const key of arr) {
+//         if (key <= -1) {
+//             continue;
+//         }
 
+//         keyOfArray.push(key);
+
+//     }
+//     return keyOfArray;
+// }
+// const arr = [1,-1, 0, -6, 2, 3, 4, -2, 5, -1, -124, 10];
+
+// console.log(onlyPostive(arr));
+
+// let sum = 0;
+// for (let i = 5; i >= 1; i--) {
+//     sum += i;
+//     console.log(i);
+// }
+// console.log(sum);
+
+function sum(i) {
+    // console.log(i);
+    if (i === -1) {
+        return 1;
     }
-    return keyOfArray;
+//    sum(--i);
+    
+    return i + sum(--i);
 }
-const arr = [1,-1, 0, -6, 2, 3, 4, -2, 5, -1, -124];
+// sum(5)
 
-console.log(onlyPostive(arr));
+// console.log(sum(5));
 
-
+const som = sum(5);
+console.log(som);
 
