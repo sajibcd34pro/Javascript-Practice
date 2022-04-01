@@ -178,10 +178,11 @@
 // console.log(sum);
 
 function sum(i) {
-    // console.log(i);
-    if (i === -1) {
-        return 1;
+    console.log(i);
+    if (i === 1) {
+        return -1;
     }
+    //it gives us upper value cause we return 1 instead of -1. example if we call the function till -1 then its should return sum as 14 but if we return 1 then it gives 16.
 //    sum(--i);
     
     return i + sum(--i);
@@ -193,3 +194,9 @@ function sum(i) {
 const som = sum(5);
 console.log(som);
 
+//not for concatenate a number we should use 0 as a default value; & for multiply u can use 1 as a default value
+// let factorial = 1;
+// for (let i = 5; i >= 1; i--) {
+//     factorial = factorial * i;
+//     console.log(factorial)
+// }
