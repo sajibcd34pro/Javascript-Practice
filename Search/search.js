@@ -22,18 +22,40 @@ const products = [
     
 // }
 
-function searchProduct(elements, searchText) {
-    const result = [];
+//include method is case sensitive .
+// function searchProduct(elements, searchText) {
+//     const result = [];
 
-    for (let i = 0; i < elements.length; i++) {
-        const element = elements[i];
-        if (element.name.includes(searchText)) {
-           result.push(element);
-        }
+//     for (let i = 0; i < elements.length; i++) {
+//         const element = elements[i];
+//         if (element.name.includes(searchText)) {
+//            result.push(element);
+//         }
 
-    }
-    return result;
-}
+//     }
+//     return result;
+// }
 
-const search = searchProduct(products, 'laptop');
-console.log(search);
+// const search = searchProduct(products, 'watch');
+// console.log(search);
+
+//for loop continue or skip . module 23
+
+
+
+
+// for (const product of products) {
+//     if (product.price < 10000) {
+//         break;
+//     }
+//     console.log(product);
+// }
+// let product2= []
+// for (const product of products) {
+//     if (product.price < 10000) {
+//         // console.log('skype');
+//         // continue;
+//     }
+//    console.log(product);
+// //   console.log(product2);
+// }

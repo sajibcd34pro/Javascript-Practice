@@ -17,10 +17,33 @@
 
     // }
     
-    var array = [1, 2 ,'m'];
-    for(const element of array){
-        document.write( element, '      ');
-    }
+    // var array = [1, 2 ,'m'];
+    // for(const element of array){
+    //     document.write( element, '      ');
+    // }
+    let a = '2';
+    // let number = Number(a);
+    //  document.write(Number('2') + 1 );
+    //parseInt
+    document.write(parseInt('2') + 1, '<br>')
+    function compare(a, b) {
+            if (a == b) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        const result = compare(15, "15", '<br>');
+        document.write(result);
+
+        const array = [1, 2, 3, 4, 5, 6, 7];
+
+            for (let i = 1; i < array.length; i++) {
+                // if (i == 5) {
+                //     continue;
+                // }
+               document.write(array[i], '<br>');
+            }
     </script>
 </body>
 </html>
