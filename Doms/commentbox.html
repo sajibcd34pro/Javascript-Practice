@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<body>
+    <h2>Add your Comment, please</h2>
+    <section>
+        <h2>your comments</h2>
+        <div id="comment-container">
+            <p>Lorem, ipsum dolor.</p>
+            <p>Natus, delectus maxime!</p>
+        </div>
+        <div>
+            <textarea id="comment" cols="60" rows="4"></textarea>
+            <button id="update">post</button>
+        </div>
+    </section>
+  
+    <script>
+        document.getElementById('update').addEventListener('click', function(){
+          let commentTextField = document.getElementById('comment');
+          const commentContainer = document.getElementById('comment-container');
+          const p = document.createElement('p');
+          p.innerText = commentTextField.value;
+         const comment = commentContainer.appendChild(p);
+       
+        // clean input field
+         commentTextField.value = ' ';
+        })
+    </script>
+
+</body>
+</html>

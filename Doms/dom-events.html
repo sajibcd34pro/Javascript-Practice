@@ -19,14 +19,36 @@
     
       <button id="makePink">makePink</button>
       <button id="make-goldenrod">make: goldenRod</button>
-
+      <button id="make-orange">make: orange</button>
       <!-- you should use script tag inside body tag -->
+      <p id="clicking-method"></p>
+      <button onclick="handleJustFunction()">just function </button>
+      <button id="direct-event">direct function using addEvent Listener</button>
 
+      <input type="text" id="input-field"> <button id="update">update</button>
     <script src="/Doms/dom-event.js"></script>
 
-     <!-- <script>
-      
+     <script>
+      function handleJustFunction(){
+        const p=  document.getElementById('clicking-method');
+        p.innerText = 'set by using function';
+       
 
-     </script> -->
+      }
+      //direct using function
+      document.getElementById('direct-event').addEventListener('click', () =>{
+         const p = document.getElementById('clicking-method');
+         p.innerText='set by direct event listener & function';
+      })
+
+      document.getElementById('update').addEventListener('click', ()=>{
+          const inputField = document.getElementById('input-field');
+          let p = document.getElementById('clicking-method');
+          p.innerText = inputField.value;
+          //clear value after update 
+          inputField.value = '';
+      })
+
+     </script>
 </body>
 </html>

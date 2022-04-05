@@ -21,7 +21,7 @@ function makeBlue() {
 
 
 const pinkButton = document.getElementById('makePink');
-console.log(pinkButton);
+// console.log(pinkButton);
 
 // pinkButton.onclick = function makeBlue() {
 //     document.body.style.background = 'pink';
@@ -60,5 +60,11 @@ function makeGolder() {
 // }
 
 // goldenButton.addEventListener('click', makeGolder)
+
+// for direct | note: addEventListener is inbuilt function of js 
+
+document.getElementById('make-orange').addEventListener('click', () => {
+    document.body.style.background = 'orange';
+})
 
 
