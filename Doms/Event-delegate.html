@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event Delegate</title>
+</head>
+<body>
+    <h2>Event Delegate & benefits of event bubble</h2>
+    <ul id="items">
+        <h2>test</h2>
+        <li class="item">items 1</li>
+        <li class="item">items 2</li>
+        <li class="item">items 3</li>
+        <li class="item">items 4</li>
+    </ul>
+    <button id="add">Add items</button>
+    <input type="text" id="text-field">
+    <button id="post">post</button>
+
+<script>
+   
+//    const items = document.getElementsByClassName('item');
+//     for (const item of items) {
+//         item.addEventListener('click', (e) => {
+//             // without parameter
+//             // document.getElementById('items').removeChild(item);
+//             // with parameter 
+             
+//         })
+//     }
+
+   document.getElementById('add').addEventListener('click', ()=>{
+       const li = document.createElement('li');
+       const parentItems = document.getElementById('items');
+    //    li.classList = 'item';
+       li.className = 'item'; 
+       parentItems.appendChild(li);
+       li.innerText = 'new items added';
+       
+
+     //remove the following items & new items
+    //   const items = document.getElementsByClassName('item');
+    //    for (const item of items) {
+    //        item.addEventListener('click', () => {
+    //            document.getElementById('items').removeChild(item);
+    //        })
+    //    }
+
+
+   })
+   document.getElementById('text-field').addEventListener('change', (e)=>{
+    //    const textField = document.getElementById('text-field');
+       const li = document.createElement('li');
+       const parentOfLi = document.getElementById('items');
+       parentOfLi.appendChild(li);
+    //    li.innerText = textField.value;
+
+    //    textField.value = ' ';
+     li.innerText = e.target.value;
+     //clear text-filed 
+     e.target.value = ' ';
+      
+   })
+
+//    i need to learn js keycode 
+   //remove new items the help of event buble  bubble 
+//    const items = document.getElementsByClassName('item')
+//    for (const item of items) {
+//          item.addEventListener('click', ()=>{
+//              console.log('click item');
+//          })
+
+//    }
+   document.getElementById('items').addEventListener('click', (e)=>{
+    //    console.log(e);
+    //    console.log(e.target.parentNode);
+       // e.target return the child of parent 
+       e.target.parentNode.removeChild(e.target)
+       
+   })
+
+   //mouse move event // mouseenter
+</script>
+    
+</body>
+</html>

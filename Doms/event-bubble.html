@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- I SKIPPED EVENT BUBBLE & NODE LIST VS HTML COLLECTION   -->
+    <section id="section">
+        <h2>Event Bubble</h2>
+        <ul id="list-container">
+            <li>lorem3</li>
+            <li id="second">lorem3</li>
+            <li>lorem3</li>
+            <li>lorem3</li>
+        </ul>
+        <input type="text" id="text">
+    </section>
+
+    <script>
+        document.getElementById('section').addEventListener('click', (e) =>{
+            console.log('section clicked');
+            e.stopPropagation()
+        })
+        // document.getElementById('second').addEventListener('click', ()=>{
+        //     console.log('second items clicked');
+        // })
+        // document.getElementById('list-container').addEventListener('click', ()=>{
+        //     console.log('ul clicked');
+        // })
+        // to handle event bubble & target specific html element we should use input parameter inside the eventListener function . & should use event.stopPropagation() method or function 
+        
+        document.getElementById('second').addEventListener('click', (e)=>{
+            console.log('second clicked');
+             e.stopPropagation();
+        })
+      
+        //explore stopImmediatePropagation
+        
+
+    </script>
+</body>
+</html>

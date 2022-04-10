@@ -13,3 +13,15 @@ console.log(total.toFixed(1));
 // floating number ভাসমান বা দশমিক সংখ্যা
 
 // remainder or modulus operator ...%
+function findOddFriend(array) {
+    const oddFriend = [];
+    for (let i = 0; i < array.length; i++) {
+        if (friends[i].length % 2 !== 0) {
+            oddFriend.push(friends[i]);
+        }
+    }
+    return oddFriend;
+}
+const friends = ["abc", "ab", "abcde", "abce"];
+
+console.log(findOddFriend(friends));
