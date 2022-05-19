@@ -1,0 +1,5 @@
+//What is an Array ?
+
+//Array is  data structure where we can organize multiple data under a single variable .
+
+// what is array traversing ?
